@@ -135,7 +135,7 @@
                                             <tr>
                                                 <td>Descuentos</td>
                                                 <td class="text-right">
-                                                    <t t-set="foo8" t-value="total_sin_desc - o.x_total"/>
+                                                    <t t-set="foo8" t-value="o.amount_discount"/>
                                                     <span t-esc="'%.2f'% foo8"/>
                                                 </td>
                                             </tr>
@@ -151,7 +151,7 @@
                                                     <strong>TOTAL</strong>
                                                 </td>
                                                 <td class="text-right">
-                                                    <t t-set="total_bs" t-value="o.x_total"/>
+                                                    <t t-set="total_bs" t-value="total_sin_desc"/>
                                                     <span t-esc="'%.2f'% total_bs"/>
                                                 </td>
                                             </tr>
