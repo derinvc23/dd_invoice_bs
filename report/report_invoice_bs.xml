@@ -136,7 +136,7 @@
                                                     <strong>TOTAL</strong>
                                                 </td>
                                                 <td class="text-right">
-                                                    <t t-set="total_final" t-value="o.x_total"/>
+                                                    <t t-set="total_final" t-value="o.amount_total"/>
                                                     <span t-esc="'%.2f'% total_final"/>
                                                 </td>
                                             </tr>
