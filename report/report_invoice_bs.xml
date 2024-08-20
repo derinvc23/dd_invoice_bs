@@ -131,13 +131,13 @@
                                                     <span t-esc="'%.2f'% subtotaldesc"/>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!--<tr>
                                                 <td>Descuentos</td>
                                                 <td class="text-right">
                                                     <t t-set="desc_bs" t-value="o.amount_discount"/>                                                    
                                                     <span t-esc="'%.2f'% desc_bs"/>                                                   
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                             <!--tr>
                                                 <td>Descuentos</td>
                                                 <td class="text-right">
