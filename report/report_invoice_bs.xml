@@ -185,15 +185,13 @@
 
                             <br/>
         
-                            <div class="col-xs-6 pull-left">
+                           <!-- <div class="col-xs-6 pull-left">
                                 <span>
                                     <strong>Son :</strong>
                                 </span>
-                                <t t-set="total_final_in_words" t-value="num2words(total_final, lang='es').capitalize()"/>
-                                <span t-esc="total_final_in_words"/>
-                                <!--<span t-field="o.amount_in_words"/>-->
+                                <span t-field="o.amount_in_words"/>
                                 <br/>
-                            </div>
+                            </div> -->
         
                             <div>
                                 <br/>
