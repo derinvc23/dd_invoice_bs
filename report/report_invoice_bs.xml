@@ -131,6 +131,15 @@
                                                     <span t-esc="'%.2f'% subtotaldesc"/>
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td>
+                                                    <strong>TOTAL</strong>
+                                                </td>
+                                                <td class="text-right">
+                                                    <t t-set="total_final" t-value="o.x_total"/>
+                                                    <span t-esc="'%.2f'% total_final"/>
+                                                </td>
+                                            </tr>
                                             <!--<tr>
                                                 <td>Descuentos</td>
                                                 <td class="text-right">
