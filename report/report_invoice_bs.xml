@@ -145,7 +145,7 @@
                                                     <span t-esc="desc_bs" t-field-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: &quot;o.currency_id&quot;}"/>
                                                 </td>
                                             </tr-->
-                                            <tr>
+                                            <!--<tr>
                                                 <td>
                                                     <strong>TOTAL</strong>
                                                 </td>
@@ -153,7 +153,7 @@
                                                     <t t-set="total_bs" t-value="o.x_total"/>
                                                     <span t-esc="'%.2f'% total_bs"/>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                             <tr>
                                                 <td></td>
                                                 <td>
