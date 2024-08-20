@@ -127,7 +127,6 @@
                                             <tr>
                                                 <td>Subtotal</td>
                                                 <td class="text-right">
-                                                    <t t-set="desc_bs" t-value="o.amount_discount"/>
                                                     <t t-set="subtotaldesc" t-value="total_sin_desc"/>
                                                     <span t-esc="'%.2f'% subtotaldesc"/>
                                                 </td>
@@ -135,8 +134,8 @@
                                             <tr>
                                                 <td>Descuentos</td>
                                                 <td class="text-right">
-                                                    <t t-set="foo8" t-value="o.amount_discount"/>
-                                                    <span t-esc="'%.2f'% foo8"/>
+                                                    <t t-set="desc_bs" t-value="o.amount_discount"/>                                                    
+                                                    <span t-esc="'%.2f'% desc_bs"/>                                                   
                                                 </td>
                                             </tr>
                                             <!--tr>
@@ -151,7 +150,7 @@
                                                     <strong>TOTAL</strong>
                                                 </td>
                                                 <td class="text-right">
-                                                    <t t-set="total_bs" t-value="total_sin_desc"/>
+                                                    <t t-set="total_bs" t-value="o.x_total"/>
                                                     <span t-esc="'%.2f'% total_bs"/>
                                                 </td>
                                             </tr>
@@ -173,40 +172,8 @@
                                     </table>
                                 </div>
         
-                            </div>
-        
-                            <!--div class="col-xs-4 pull-right">
-                                <div>
-                                    <table class="table table-condensed">
-                                        <tr class="border-black">
-        
-                                            <td><strong>TOTAL $us.</strong></td>
-                                            <td class="text-right">
-                                                 <span t-field="o.amount_total"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>TOTAL Bs.</strong></td>
-                                            <td class="text-right">
-                                                <t t-set="foo99"  t-value="o.amount_total_company_signed" t-field-options="{&quot;widget&quot;: &quot;monetary&quot;}"/>
-                                                <span t-esc="'%.2f'% foo99"/>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-        
-                            </div-->
-        
-                            <!--div class="col-xs-6" align="left">
-                                <span t-field="o.amount_in_words"/> Bs. <br/>
-                                    <t t-set="relleno_qr" t-value="0"/>
-                                    <t t-set="descuento_bs" t-value="o.amount_discount*6.97"/>
-                                    <t t-set="descuento_bs2" t-value="'%.2f'% descuento_bs"/>
-                                    <t t-set="subtotaldesc" t-value="o.amount_total_company_signed+descuento_bs"/>
-                                    <t t-set="subtotaldesc2" t-value="'%.2f'% subtotaldesc"/>
-                                    <t t-set="base_imponible" t-value="o.amount_total_company_signed"/>
-                                    <img  t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR', o.nit_empresa+o.unipersonal+o.number+o.unipersonal+o.autorizacion+o.unipersonal+o.date_invoice+o.unipersonal+str(float(subtotaldesc2))+o.unipersonal+str(float(base_imponible))+o.unipersonal+o.code+o.unipersonal+o.partner_id.nit+o.unipersonal+str(float(relleno_qr))+o.unipersonal+str(float(relleno_qr))+o.unipersonal+str(float(relleno_qr))+o.unipersonal+str(float(descuento_bs2))+o.unipersonal, 125, 125)" style="width:125px;height:125px"/>
-                            </div-->
+                            </div>        
+
                             <br/>
         
                             <div class="col-xs-6 pull-left">
