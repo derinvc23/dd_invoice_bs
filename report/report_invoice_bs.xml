@@ -37,7 +37,7 @@
                                     <span t-field="o.autorizacion"/>
                                     <br/>
                                     <strong>
-                                        <p align="right">oooORIGINAL</p>
+                                        <p align="right">ORIGINAL</p>
                                     </strong>
                                     <p style="font-size:10px">
                                         <span t-field="o.actividad"/>
@@ -74,7 +74,7 @@
                                 <table class="table table-condensed" style="font-size:12px">
                                     <thead>
                                         <tr>
-                                            <th class="text-right">Caaaantidad</th>
+                                            <th class="text-right">Cantidad</th>
                                             <th>Descripción</th>
                                             <th class="hidden">Source Document</th>
                                             <th class="text-right">Precio Bs.</th>
